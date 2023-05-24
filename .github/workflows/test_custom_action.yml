@@ -1,0 +1,9 @@
+name: vishal test
+on: workflow_dispatch
+jobs:
+  build:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - name: call my action
+          uses: cibcemuorg/check-files-action@main
